@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*index.htmlのヘッダー*/
+body {
+    margin-top: 0;/*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
+    padding-top: 0;
+    background-image: url(../images/neon-background.png);
+}
+
+/*上のメニュー固定用*/
+header {
+    width: 100%;
+    background-color: rgba(95, 88, 88, 0.438);
+    position: fixed;
+    display: flex;
+}       
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;/*トップのメニューの上下位置調整*/
+}
+
+.menu li{
+    margin-right: 80px;
+    font-size: x-large;
+}
+
+/*画像は2021_0813時点で仮*/
+.logo img{
+    width: 150px;
+    height: auto;
+    margin-right: 250px;
+    margin-left: 0;
+}
+
+/*2021_0813リンクの文字は後で詰める。大まかな形だけ*/
+header a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+header a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+header a:hover {
+    color: #7b8dac;
+    text-decoration: none;
+}
+header a:active {
+    color: #5a9bc0;
+    text-decoration: none;
+}
+
+
+/*keyvisual*/
+
+/*スペースを無理やり作って確保している（他にもっといいのがあればそれがいい）*/
+.keyvisual{
+    height: 500px;
+}
+
+/*all_contents*/ 
+/*各contentsの共通部分*/
+.all_contents {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.all_contents h2{
+color: rgb(126, 121, 121);
+}
+
