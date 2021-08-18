@@ -4,7 +4,12 @@
 body {
     margin-top: 0;/*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
     padding-top: 0;
+}
+
+.wrapper {
     background-image: url(../images/neon-background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*上のメニュー固定用*/
@@ -62,9 +67,11 @@ header a:active {
 
 /*all_contents*/ 
 /*各contentsの共通部分*/
-.all_contents {
-    background-color: whitesmoke;
+/*半透明の白いところ*/
+.all_contents {  
+    background-color: rgba(248, 246, 246, 0.938);
     text-align: center;
+    width: 100%;
 }
 
 .all_contents h2{
