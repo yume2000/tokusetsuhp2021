@@ -8,8 +8,8 @@ body {
 
 .wrapper {
     background-image: url(../images/neon-background.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
 }
 
 /*上のメニュー固定用*/
@@ -68,6 +68,11 @@ header a:active {
 /*all_contents*/ 
 /*各contentsの共通部分*/
 /*半透明の白いところ*/
+.time_schedule {
+    background-color: rgba(136, 125, 125, 0.37);
+    text-align: center;
+    width: 100%;
+}
 .all_contents {  
     background-color: rgba(248, 246, 246, 0.938);
     text-align: center;
