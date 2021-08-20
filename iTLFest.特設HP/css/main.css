@@ -2,14 +2,19 @@
 
 /*index.htmlのヘッダー*/
 body {
-    margin-top: 0;/*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
-    padding-top: 0;
+    /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
     background-image: url(../images/neon-background.png);
     background-attachment: fixed;
     width: 100%;
+}
+
+h1 {
+    font-size: xx-large;
 }
 
 /*上のメニュー固定用*/
@@ -35,11 +40,11 @@ header {
 .logo img{
     width: 150px;
     height: auto;
-    margin-right: 250px;
+    margin-right: 350px;
     margin-left: 0;
 }
 
-/*2021_0813リンクの文字は後で詰める。大まかな形だけ*/
+/*2021_0813リンクの文字色は後で詰める。大まかな形だけ*/
 header a:link {
     color: whitesmoke;
     text-decoration: none;
@@ -68,18 +73,56 @@ header a:active {
 /*all_contents*/ 
 /*各contentsの共通部分*/
 /*半透明の白いところ*/
+
 .time_schedule {
     background-color: rgba(136, 125, 125, 0.37);
     text-align: center;
     width: 100%;
+    color: whitesmoke;
+    padding-bottom: 10px;
+    margin-bottom: 0;
 }
-.all_contents {  
+.time_schedule > ul > li{
+    display: block;
+    list-style-type: none;
+    border: solid;
+    border-color:honeydew;
+    border-width: 1px;
+    text-align: left;
+    margin-left: 250px;
+    width: 60%;
+    margin-bottom: 5px;
+}
+.all_contents {
     background-color: rgba(248, 246, 246, 0.938);
     text-align: center;
     width: 100%;
 }
 
-.all_contents h2{
-color: rgb(126, 121, 121);
+.all_contents > h1 {
+    margin-top: 0;
+    padding-top: 10px;
+    color: rgb(126, 121, 121);
 }
 
+#contents {
+    margin-top: 200px;
+}
+
+#onlinelive{
+    margin-top: 30px;
+}
+
+#askexam {
+    margin-top: 200px;
+    margin-bottom: 580px;
+}
+
+footer {
+    margin-top: 0;
+}
+
+.footer-container {
+    color: whitesmoke;
+    text-align: center;
+}
