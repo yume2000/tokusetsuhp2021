@@ -9,7 +9,7 @@ body {
 
 .wrapper {
     background-image: url(../images/neon-background.png);
-    background-attachment: fixed;
+    background-attachment: fixed;   /*背景固定*/
     width: 100%;
 }
 
@@ -36,7 +36,7 @@ header {
     font-size: x-large;
 }
 
-/*画像は2021_0813時点で仮*/
+/*画像は2021_0813時点で仮、後でロゴの画像*/
 .logo img{
     width: 150px;
     height: auto;
@@ -66,9 +66,19 @@ header a:active {
 /*keyvisual*/
 
 /*スペースを無理やり作って確保している（他にもっといいのがあればそれがいい）*/
-.keyvisual{
+.keyvisual {
     height: 500px;
 }
+
+/*スライドショーの設定*/
+.slide_img > img{
+    width: 400px;   /*大きさは仮*/
+    height: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
 
 /*all_contents*/ 
 /*各contentsの共通部分*/
@@ -105,6 +115,7 @@ header a:active {
     color: rgb(126, 121, 121);
 }
 
+/*idタグによる個別の変更*/
 #contents {
     margin-top: 200px;
 }
