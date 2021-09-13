@@ -73,12 +73,10 @@ header a:active {
 }
 
 /*スライドショーの設定*/
-.slide_img > img{
-    width: 400px;   /*大きさは仮*/
-    height: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
+.slide_img img{
+    height: auto;
+    width: 100%;
+    border: 1px solid gray;
 }
 
 
@@ -166,6 +164,7 @@ header {
     background-color: rgba(95, 88, 88, 0.438);
     position: fixed;
     display: inline;
+    z-index: 10;
 }       
 
 .menu ul{
