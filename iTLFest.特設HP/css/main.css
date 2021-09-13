@@ -34,8 +34,22 @@ header {
 }
 
 .menu li{
-    margin-right: 80px;
+    margin-right: 60px;
     font-size: x-large;
+}
+
+/*ハンバーガーメニューが右隣に表示されないようにする。*/
+.hamburger-menu .menu-content ul {
+    list-style-type: none;
+    font-size: xx-small;
+}
+
+.hamburger-menu .menu-content a{
+    color: transparent; /*PCサイズのときのみ、箇条書きを非表示に*/
+}
+
+#menu-btn-check{
+    width: 0px;
 }
 
 .logo img{
@@ -47,19 +61,19 @@ header {
 }
 
 /*2021_0813リンクの文字色は後で詰める。大まかな形だけ*/
-header a:link {
+.header_navbar a:link {
     color: whitesmoke;
     text-decoration: none;
 }
-header a:visited {
+.header_navbar a:visited {
     color: whitesmoke;
     text-decoration: none;
 }
-header a:hover {
+.header_navbar a:hover {
     color: #7b8dac;
     text-decoration: none;
 }
-header a:active {
+.header_navbar a:active {
     color: #5a9bc0;
     text-decoration: none;
 }
@@ -176,7 +190,7 @@ header {
     font-size: medium;
 }
 
-/*アコーディオンが正常に出来た場合はwidthにサイズを入れる*/
+/*アコーディオン（ハンバーガー）が正常に出来た場合はwidthにサイズを入れる*/
 .logo img{
     width: 80px;
     height: auto;
@@ -210,6 +224,36 @@ header {
 }
 
 /*ハンバーガーメニューの作成*/
+/* <参考>https://www.asobou.co.jp/blog/web/css-menu   */
+
+/*文字色*/
+.hamburger-menu .menu-content a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hamburger-menu .menu-content a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hamburger-menu .menu-content a:hover {
+    color: #7b8dac;
+    text-decoration: none;
+}
+
+.hamburger-menu .menu-content a:hover {
+    color: #5a9bc0;
+    text-decoration: none;
+}
+
+/*文字サイズ*/
+.hamburger-menu .menu-content ul {
+    font-size: medium;
+}
+
+/**/
+
 .menu {
     display: none;
 }
