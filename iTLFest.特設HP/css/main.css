@@ -1,9 +1,9 @@
 @charset "UTF-8";
-
+/*時々ビューボート(vh)単位になってる*/
 /*index.htmlのヘッダー*/
 body {
     /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -11,6 +11,8 @@ body {
     background-image: url(../images/neon-background.png);
     background-attachment: fixed;   /*背景固定*/
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -20,24 +22,45 @@ h1 {
 /*上のメニュー固定用*/
 header {
     width: 100%;
+    padding: 1.5vh 0;
     background-color: rgba(95, 88, 88, 0.438);
     position: fixed;
     top: 0;
     z-index: 10;
     display: flex;
+    vertical-align: bottom;
 }       
 
-.menu ul{
-    display: flex;
+
+.logo img{
+    width: 11vh;
+    height: auto;
+    float: left;
+    margin-right: 40vh;
+    margin-left: 10vh;
+}
+.menu {
     list-style: none;
-    margin-top: 60px;/*トップのメニューの上下位置調整*/
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
-
+.menu ul {
+    float: center;
+}
 .menu li{
-    margin-right: 60px;
-    font-size: x-large;
+    float: left;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-left: 0;
 }
 
+
+/*ハンバーガーメニューが右隣に表示されないようにする。*/
+.hamburger-menu {
+    display: none;
+}
 /*ハンバーガーメニューが右隣に表示されないようにする。*/
 .hamburger-menu .menu-content ul {
     list-style-type: none;
@@ -52,13 +75,6 @@ header {
     width: 0px;
 }
 
-.logo img{
-    width: 110px;
-    height: auto;
-    margin-right: 350px;
-    margin-left: 0;
-    margin-top: 20px;
-}
 
 /*2021_0813リンクの文字色は後で詰める。大まかな形だけ*/
 .header_navbar a:link {
@@ -83,7 +99,7 @@ header {
 
 /*スペースを無理やり作って確保している（他にもっといいのがあればそれがいい）*/
 .keyvisual {
-    height: 500px;
+    height: 100vh;
 }
 
 /*スライドショーの設定*/
@@ -153,33 +169,29 @@ header {
 }
 
 footer {
-    margin-top: 0;
+    margin-top: 33.5vh;
 }
-
-.footer-container {
-    color: whitesmoke;
-    text-align: center;
-}
-
 
 /*SNSアイコンの大きさ調整*/
 .SNS img{
-    width: 100px;
+    width: 11vh;
+    margin: 0 10px;
     height: auto;
+    vertical-align: bottom;
 }
-
+.copy-right {
+    color: whitesmoke;
+    text-align: center;
+    bottom: 0;
+}
 
 /*スマートフォン向けCSS*/
 @media(max-width:767px){
 
 /*ヘッダの表示*/
 header {
-    width: 100%;
-    background-color: rgba(95, 88, 88, 0.438);
-    position: fixed;
-    display: inline;
-    z-index: 10;
-}       
+    vertical-align: top;
+}
 
 .menu ul{
     margin: 0 0 0 0;
@@ -192,14 +204,12 @@ header {
 
 /*アコーディオン（ハンバーガー）が正常に出来た場合はwidthにサイズを入れる*/
 .logo img{
-    width: 80px;
-    height: auto;
-    top: 5px;
-    left: 20px; ;
-    margin: 10 0 0 0;
-    padding: 0 0 0 0;
-    position: fixed;
+    width: 70px;
+    margin: 8px 0 0 10px;
 
+}
+.logo {
+    text-align: center;
 }
 
 
@@ -226,6 +236,10 @@ header {
 /*ハンバーガーメニューの作成*/
 /* <参考>https://www.asobou.co.jp/blog/web/css-menu   */
 
+.hamburger-menu {
+    display: inline-block;
+    margin:0px;
+}
 /*文字色*/
 .hamburger-menu .menu-content a:link {
     color: whitesmoke;
@@ -240,11 +254,13 @@ header {
 .hamburger-menu .menu-content a:hover {
     color: #7b8dac;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.hamburger-menu .menu-content a:hover {
+.hamburger-menu .menu-content a:active {
     color: #5a9bc0;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*文字サイズ*/
