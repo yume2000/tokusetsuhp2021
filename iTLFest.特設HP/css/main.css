@@ -185,6 +185,14 @@ footer {
     bottom: 0;
 }
 
+
+/*各htmlごとの修正*/
+/*onlinelive_top.html*/
+.space01{
+    height: 20vh;
+}
+
+
 /*スマートフォン向けCSS*/
 @media(max-width:767px){
 
