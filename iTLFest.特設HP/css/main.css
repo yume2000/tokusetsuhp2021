@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*上部の隙間防止*/
+* {
+    margin: 0 0 0 0;
+  }
 
 /*index.htmlのヘッダー*/
 body {
@@ -369,4 +373,14 @@ header {
     left: 0;/*メニューを画面内へ*/
 }
 
+}
+
+/*contact.html*/
+
+
+#contact {
+    margin-top: 150px;
+}
+#contact h1 {
+    padding: 15px 0 0 15px;
 }
