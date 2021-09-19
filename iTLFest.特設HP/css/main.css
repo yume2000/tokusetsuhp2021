@@ -6,14 +6,19 @@ body {
     margin: 0 auto;
     padding: 0;
 }
-
-.wrapper {
-    background-image: url(../images/neon-background.png);
-    background-attachment: fixed;   /*背景固定*/
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/neon-background.png) center no-repeat;
+    background-size:cover;
 }
+/*背景固定に不具合があったため修正　リンク：https://y-com.info/contents/?p=5941 */
 
 h1 {
     font-size: xx-large;
@@ -191,13 +196,19 @@ footer {
 
 /*各htmlごとのcss*/
 /*onlinelive_top.html*/
-.onlinelive_wrapper {
-    background-image: url(../images/onlinelive-background_仮画像.jpg);
-    background-attachment: fixed;   /*背景固定*/
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.onlinelive_wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/onlinelive.jpg) center no-repeat;
+    background-size:cover;
 }
+
 /*トップの部分*/
 .space01 {
     height: 40vh;
