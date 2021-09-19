@@ -228,9 +228,12 @@ footer {
     margin-top: 0;
 }
 
+/*floatは高さを無視するため、画像を大きくしすぎると配置がずれる*/
+/*応急処置のようだが、その際は、pタグを何個か連続させてdivの高さを延ばす。*/
+/*そして、pタグのcolorをtransparentにして透明にする*/
 .onlive_all_contents > img {
-    width: 400px;
-    height: 230px;
+    width: 400px;  
+    height: 250px;
     float: left;
     margin-top: 30px;
     margin-left: 170px;
