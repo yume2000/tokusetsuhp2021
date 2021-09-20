@@ -17,11 +17,7 @@
   <!-- 装飾のためのbootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-  <!-- フォーム送信後のページの遷移先設定 -->
-  <script type="text/javascript">var submitted = false;</script>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-    onload="if(submitted){window.location='thanks-contact.html';}"></iframe>
+    <script src="../js/formValidation.js"></script>
   <!--基本的な文法＝　<タグ名 属性(class/id(cssやJS用)etc.)>要素</タグ(終了)>-->
   <!--基本構造
 DOCTYPE宣言
@@ -39,6 +35,7 @@ html,
  body
 html
 -->
+
 </head>
 
 <body>
@@ -84,49 +81,11 @@ html
 
     <!-- メイン情報 -->
     <main>
-      <div class="contact-subject">
-        <h1>お問い合わせ</h1>
-        <p>iTL Fest.や学園祭についてのお問い合わせはこちら</p>
-      </div>
-
-      <div class="contact-form">
-        <h2>iTL Fest.実行委員会へのお問い合わせ</h2>
-        <p>iTL Fest.実行委員会へのお問い合わせはこちらのフォームからお願いします。</p>
-        <p>確認後、実行委員会の方から連絡をいたします。</p>
-
-        <!-- Googleフォームに回答が送信されるようになっています 参考：https://www.gorilla-web.net/2020new_google_form_custmize/, https://shogo-log.com/google-form-ajax/ -->
-        <form class="form-control"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScLiZRqDhg0TapBcdMF2eO6r78ubcsFGb0vZwjP5Wh_FNseDQ/formResponse"
-          target="hidden_iframe" onsubmit="submitted=true;" method="post" id="mG61Hd">
-          <div class="form-group ">
-            <label>お名前</label>
-            <input name="entry.1072310322" type="text" class="form-control" placeholder="お名前" required>
-          </div>
-          <!-- Eメール入力エリア -->
-          <div class="form-group">
-            <label>メールアドレス</label>
-            <input name="entry.2058921787" type="email" class="form-control" placeholder="Email" required>
-          </div>
-          <div class="form-group">
-            <label>お問い合わせ内容</label>
-            <textarea name="entry.1878677927" class="form-control" rows="5" required></textarea>
-          </div>
-          <!-- 送信ボタン -->
-          <button type="submit" class="btn btn-primary">送信</button>
-        </form>
-
-      </div>
-      <div class="contact-link">
-        <h2>外部へのリンク</h2>
-        <p>学部事務室や中央大学各キャンパスへのお問い合わせは以下のリンクからお願いします。</p>
-        <h4>国際情報学部に関する質問</h4>
-        <p>国際情報学部　お問い合わせフォーム</p>
-        <a href="https://www.chuo-u.ac.jp/inquiry/form/?id=133" target="_blank"
-          rel="noopener noreferrer">https://www.chuo-u.ac.jp/inquiry/form/?id=133</a>
-        <h4>その他中央大学に関する質問</h4>
-        <p>以下のページから該当する学部や施設にお問い合わせをお願いします。</p>
-        <a href="https://www.chuo-u.ac.jp/inquiry/form/?id=133" target="_blank"
-          rel="noopener noreferrer">https://www.chuo-u.ac.jp/inquiry/</a>
+      <div class="contact-thanks">
+        <p>お問い合わせありがとうございます。</p>
+        <p>後日委員会の方からお問い合わせ内容に関して、連絡をいたします。</p>
+        <p>以下からトップページにお戻りください</p>
+        <p>トップページは<a href="../index.html">こちら</a></p>
       </div>
     </main>
 

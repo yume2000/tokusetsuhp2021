@@ -350,6 +350,15 @@ footer {
     border-bottom: solid 2px black;
 }
 
+/*thanks-contact.html*/
+.contact-thanks {
+    font-size: large;
+    text-align: center;
+    margin-top: 200px;
+    padding: 100px;
+    background-color: rgba(248, 246, 246, 0.9);
+}
+
 
 
 /*スマートフォン向けCSS*/
