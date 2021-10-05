@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/*時々ビューボート(vh)単位になってる*/
+/*上部の隙間防止*/
+* {
+    margin: 0 0 0 0;
+  }
+
 /*index.htmlのヘッダー*/
 body {
     /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
@@ -290,8 +294,70 @@ footer {
 }
 
 
+/*contact.html*/
 
+.contact_wrapper {
+    background-image: url(../images/contact-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;   /*背景固定*/
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+}
+.contact-subject {
+    margin-top: 200px;
+    text-align: right;
+    padding: 70px;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(248, 246, 246, 0.938);
+}
+.contact-form {
+    background-color: rgba(248, 246, 246, 0.9);
+    width: 90%;
+    padding: 50px;
+    margin-top: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.contact-form h2 {
+    padding-bottom: 30px;
+}
+.form-group {
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+.contact-link {
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(99, 95, 115, 0.7);
+    color: white;
+    margin: 100px 0px 100px 0px;
+    padding: 50px;
+    line-height: 30px;
+}
+.contact-link a {
+    color: aqua;
+}
+.contact-link h2 {
+    margin-bottom: 30px;
+    border-bottom: solid 2px white;
+}
+.contact-link h4 {
+    margin: 30px;
+    border-bottom: solid 2px black;
+}
 
+/*thanks-contact.html*/
+.contact-thanks {
+    font-size: large;
+    text-align: center;
+    margin-top: 200px;
+    padding: 100px;
+    background-color: rgba(248, 246, 246, 0.9);
+}
 
 
 
