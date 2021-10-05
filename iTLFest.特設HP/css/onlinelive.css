@@ -1,0 +1,486 @@
+@charset "UTF-8";
+/*上部の隙間防止*/
+* {
+    margin: 0 0 0 0;
+  }
+
+/*index.htmlのヘッダー*/
+body {
+    /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/neon-background.png) center no-repeat;
+    background-size:cover;
+}
+/*背景固定に不具合があったため修正　リンク：https://y-com.info/contents/?p=5941 */
+
+h1 {
+    font-size: xx-large;
+}
+
+/*上のメニュー固定用*/
+header {
+    width: 100%;
+    padding: 1.5vh 0;
+    background-color: rgba(95, 88, 88, 0.438);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    vertical-align: bottom;
+}       
+
+
+.logo img{
+    width: 11vh;
+    height: auto;
+    float: left;
+    margin-right: 40vh;
+    margin-left: 10vh;
+}
+.menu {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.menu ul {
+    float: center;
+}
+.menu li{
+    float: left;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-left: 0;
+}
+
+
+/*ハンバーガーメニューが右隣に表示されないようにする。*/
+.hamburger-menu {
+    display: none;
+}
+/*ハンバーガーメニューが右隣に表示されないようにする。*/
+.hamburger-menu .menu-content ul {
+    list-style-type: none;
+    font-size: xx-small;
+}
+
+.hamburger-menu .menu-content a{
+    color: transparent; /*PCサイズのときのみ、箇条書きを非表示に*/
+}
+
+#menu-btn-check{
+    width: 0px;
+}
+
+
+/*2021_0813リンクの文字色は後で詰める。大まかな形だけ*/
+.header_navbar a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.header_navbar a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.header_navbar a:hover {
+    color: #7b8dac;
+    text-decoration: none;
+}
+.header_navbar a:active {
+    color: #5a9bc0;
+    text-decoration: none;
+}
+
+
+
+
+/*all_contents*/ 
+/*各contentsの共通部分*/
+/*半透明の白いところ*/
+
+.time_schedule {
+    background-color: rgba(136, 125, 125, 0.37);
+    text-align: center;
+    color: rgb(247, 243, 243);
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    text-shadow:  2px  2px 10px #777 ,
+    -2px  2px 10px #777 ,
+     2px -2px 10px #777 ,
+    -2px -2px 10px #777;
+    /*<参考：文字を浮かび上がらせる>https://webparts.cman.jp/string/outline/*/
+}
+.time_schedule > ul > li{
+    display: block;
+    list-style-type: none;
+    border: solid;
+    border-color:honeydew;
+    border-width: 1px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 300px;
+    margin-left: 250px
+}
+.time_schedule > ul > li > .time{
+    color: rgb(247, 243, 243);
+    font-weight: bold;
+}
+
+
+
+/*SNSアイコンの大きさ調整*/
+.SNS img{
+    width: 11vh;
+    margin: 0 10px;
+    height: auto;
+    vertical-align: bottom;
+}
+.copy-right {
+    color: whitesmoke;
+    text-align: center;
+    bottom: 0;
+}
+
+
+
+
+
+/*各htmlごとのcss*/
+/*onlinelive_top.html*/
+.onlinelive_wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/onlinelive.jpg) center no-repeat;
+    background-size:cover;
+}
+
+/*トップの部分*/
+.space01 {
+    height: 40vh;
+}
+.onlive_top {
+    text-align: right;
+    margin-right: 130px;
+    margin-bottom: 140px;
+}
+.onlive_top h1 {
+    font-size: 60px;
+    color: whitesmoke;
+}
+.onlive_top h2 {
+    color: whitesmoke;
+}
+/*ここまで*/
+
+/*各コンテンツ共通部分*/
+.onlive_all_contents {
+    margin-bottom: 0px;/*コンテンツ間の余白を無くす*/
+    width: 100%;
+}
+.onlive_script {
+    overflow: auto;/*回り込みを続ける*/
+}
+.onlive_script > p{
+    margin-top: 0;
+}
+
+/*floatは高さを無視するため、画像を大きくしすぎると配置がずれる*/
+/*応急処置のようだが、その際は、pタグを何個か連続させてdivの高さを延ばす。*/
+/*そして、pタグのcolorをtransparentにして透明にする*/
+.onlive_all_contents > img {
+    width: 400px;  
+    height: 250px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 170px;
+    margin-right: 30px;
+}
+
+.onlive_all_contents  h2 {
+    margin-top: 0px;/*コンテンツ間の余白を無くす*/
+    padding-top: 30px;
+}
+.onlive_all_contents span{
+    border-bottom: solid;/*企画名に下線*/
+}
+
+/*各コンテンツ個別変更*/
+/*01*/
+#onlive_contents01 {
+    background-color:rgb(243, 224, 250);
+}
+#onlive_contents01 > h1{
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: solid;
+    border-color: gray;
+}
+#onlive_contents01 span{
+    color: black;
+}
+/*02*/
+#onlive_contents02 {
+    color: white;
+}
+/*03*/
+#onlive_contents03{
+    background-color:rgb(243, 224, 250);
+}
+#onlive_contents03 {
+    color: black;
+}
+/*04*/
+#onlive_contents04 {
+    background-color: rgba(133, 128, 128, 0.438);
+}
+#onlive_contents04 {
+    color: white;
+}
+
+
+/*スマートフォン向けCSS*/
+@media(max-width:767px){
+
+/*ヘッダの表示*/
+header {
+    vertical-align: top;
+}
+
+.menu ul{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.menu li{
+    font-size: medium;
+}
+
+/*アコーディオン（ハンバーガー）が正常に出来た場合はwidthにサイズを入れる*/
+.logo img{
+    width: 70px;
+    margin: 8px 0 0 10px;
+
+}
+.logo {
+    text-align: center;
+}
+
+
+/*スケジュール表位置*/
+.time_schedule > ul {
+    display: block;
+}
+
+.time_schedule > ul > li{
+    width: 80%;
+    margin-left: 40px;
+    padding-right: 0;
+    text-align: left;
+    margin-right: 0;
+}
+
+
+/*SNSアイコンの大きさ調整*/
+.SNS img{
+    width: 80px;
+    height: auto;
+}
+
+/*ハンバーガーメニューの作成*/
+/* <参考>https://www.asobou.co.jp/blog/web/css-menu   */
+
+.hamburger-menu {
+    display: inline-block;
+    margin:0px;
+}
+/*文字色*/
+.hamburger-menu .menu-content a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hamburger-menu .menu-content a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hamburger-menu .menu-content a:hover {
+    color: #7b8dac;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .menu-content a:active {
+    color: #5a9bc0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*文字サイズ*/
+.hamburger-menu .menu-content ul {
+    font-size: medium;
+}
+
+/**/
+
+.menu {
+    display: none;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 25px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: black;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: gray;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 95%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: gray;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+
+
+/*LIVE配信用レスポンシブ*/
+/*以下共通変更*/
+/*LIVE配信の部分*/
+.space01 {
+    height: 30vh;
+}
+.onlive_top {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+/**/
+
+.onlive_all_contents {
+    text-align: center;
+}
+.onlive_all_contents img{
+    width: 360px;
+    margin-left: 60px;/*画像位置ここで調整*/
+}
+.onlive_script {
+    clear: left;
+}
+/*以下各コンテンツ個別変更*/
+
+}
