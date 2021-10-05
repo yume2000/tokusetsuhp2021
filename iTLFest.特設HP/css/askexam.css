@@ -1,0 +1,65 @@
+body {
+  font-family: serif ,"ヒラギノ明朝", "ヒラギノ角ゴシック";
+}
+.wrapper:before{
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100vh;
+  background:url(../images/askexam.jpg) center no-repeat;
+  background-size:cover;
+}
+.Title {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+.askexam-top {
+  position: absolute;
+  top: 55vh;
+  right: 10vh;
+  text-align: right;
+  color: #fff;
+  font-weight: normal;
+}
+.askexam-top h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.askexam-top p{
+  font-size: 20px;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.columns {
+  margin: 0;
+  width: 100%;
+}
+.column-white{
+  width: 100%;
+  color:#434343;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 0;
+}
+.column-white h3{
+  text-align: center;
+}
+.column-black{
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background-color: rgba(104, 104, 123, 0.8);
+  padding: 20px 0;
+}
+.column-black h3{
+  text-align: center;
+}
+.column-contents{
+  margin: 30px 30px;
+  border-top: solid 2px #434343;
+}
