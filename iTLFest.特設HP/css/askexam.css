@@ -63,3 +63,33 @@ body {
   margin: 30px 30px;
   border-top: solid 2px #434343;
 }
+
+/*レスポンシブ*/
+
+/*レスポンシブ*/
+@media(max-width:767px){
+  .Title {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+  }
+  .askexam-top {
+    position: absolute;
+    top: 68vh;
+    right: 2vh;
+    text-align: right;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: normal;
+  }
+  .askexam-top h1 {
+    font-size: 34px;
+    margin-bottom: 0;
+  }
+  .askexam-top p{
+    font-size: 12px;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  
+  }
