@@ -33,12 +33,12 @@ body {
     z-index:0;
     opacity: 0.8;
     position: absolute;
-    top: 0;
+    top: 10vh;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 75%;
+    width: 40%;
 }
 h1 {
     font-size: xx-large;
@@ -383,7 +383,10 @@ footer {
 
 /*スマートフォン向けCSS*/
 @media(max-width:767px){
-
+/*タイトルの画像サイズ調整*/
+.title img{
+    width: 70%;
+}
 /*ヘッダの表示*/
 header {
     vertical-align: top;
