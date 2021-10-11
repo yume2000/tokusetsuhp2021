@@ -6,6 +6,7 @@
 
 /*index.htmlのヘッダー*/
 body {
+    font-family: serif ,"ヒラギノ明朝", "ヒラギノ角ゴシック";
     /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
     margin: 0 auto;
     padding: 0;
@@ -174,19 +175,25 @@ header {
 
 /*トップの部分*/
 .space01 {
-    height: 40vh;
+    margin: 0;
+    height: 100vh;
+    position: relative;
 }
 .onlive_top {
-    text-align: right;
-    margin-right: 130px;
-    margin-bottom: 140px;
+  position: absolute;
+  top: 55vh;
+  right: 10vh;
+  text-align: right;
+  color: whitesmoke;
+  font-weight: normal;
 }
 .onlive_top h1 {
     font-size: 60px;
-    color: whitesmoke;
 }
 .onlive_top h2 {
-    color: whitesmoke;
+  font-size: 20px;
+  margin-top: 0;
+  padding-bottom: 20px;
 }
 /*ここまで*/
 
@@ -221,11 +228,11 @@ header {
 .onlive_all_contents span{
     border-bottom: solid;/*企画名に下線*/
 }
-
+  
 /*各コンテンツ個別変更*/
 /*01*/
 #onlive_contents01 {
-    background-color:rgb(243, 224, 250);
+    background-color:rgba(255, 255, 255, 0.9);
 }
 #onlive_contents01 > h1{
     text-align: center;
@@ -239,17 +246,18 @@ header {
 /*02*/
 #onlive_contents02 {
     color: white;
+    background-color: rgba(122, 131, 160, 0.438);
 }
 /*03*/
 #onlive_contents03{
-    background-color:rgb(243, 224, 250);
+    background-color:rgba(255, 255, 255, 0.9);
 }
 #onlive_contents03 {
     color: black;
 }
 /*04*/
 #onlive_contents04 {
-    background-color: rgba(133, 128, 128, 0.438);
+    background-color: rgba(122, 131, 160, 0.438);
 }
 #onlive_contents04 {
     color: white;
@@ -300,8 +308,11 @@ header {
 
 /*SNSアイコンの大きさ調整*/
 .SNS img{
-    width: 80px;
+    width: 55px;
     height: auto;
+}
+.copy-right{
+    font-size: 12px;
 }
 
 /*ハンバーガーメニューの作成*/
@@ -461,13 +472,38 @@ header {
 /*LIVE配信用レスポンシブ*/
 /*以下共通変更*/
 /*LIVE配信の部分*/
-.space01 {
-    height: 30vh;
+.onlinelive_wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    height: 100vh;
+    background:url(../images/onlinelive.jpg) no-repeat;
+    background-position: center;
+    background-size:cover;
 }
+.space01 {
+    height: 100vh;
+}
+
 .onlive_top {
+    position: absolute;
     text-align: right;
-    margin-right: 30px;
-    margin-bottom: 50px;
+    margin: 0%;
+    top: 68vh;
+    right: 2vh;
+    opacity: 0.9;
+}
+.onlive_top h1{
+    font-size: 34px;
+    margin-bottom: 0;
+}
+.onlive_top h2{
+    font-size: 12px;
+    margin-top: 0;
+    padding-bottom: 20px;
 }
 /**/
 

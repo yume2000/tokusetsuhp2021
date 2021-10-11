@@ -14,24 +14,26 @@ body {
     background:url(../images/contents.jpg) center no-repeat;
     background-size:cover;
 }
-
-.space02{
-height: 40vh; ;    
+.space02 {
+    margin: 0;
+    height: 100vh;
+    position: relative;
 }
-
 .contents_title {
-    text-align: right;
-    margin-right: 130px;
-    margin-bottom: 140px;
+  position: absolute;
+  top: 55vh;
+  right: 10vh;
+  text-align: right;
+  color: whitesmoke;
+  font-weight: normal;
 }
-
-.contents_title h1{
+.contents_title h1 {
     font-size: 60px;
-    color: white;
 }
-
-.contents_title h2{
-    color: white;
+.contents_title h2 {
+  font-size: 20px;
+  margin-top: 0;
+  padding-bottom: 20px;
 }
 
 /*委員会企画*/
@@ -79,8 +81,8 @@ height: 40vh; ;
    -1px  0px 2px #999999,
     0px -1px 2px #999999;
     position: absolute;
-    top: 37.5%;
-    left: 45%;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -96,7 +98,7 @@ height: 40vh; ;
 
 .contents_detail {
     overflow: auto;
-    width: 400px;
+    width: 100%;
 }
 .contents_detail > p{
     margin-top: 0;
@@ -148,8 +150,8 @@ height: 40vh; ;
    -1px  0px 2px #999999,
     0px -1px 2px #999999;
     position: absolute;
-    top: 37.5%;
-    left: 45%;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -169,15 +171,41 @@ height: 40vh; ;
 
 /*レスポンシブ*/
 @media(max-width:767px){
+    .contents_wrapper:before{
+        background-position: 40%;
+    }
 .space02 {
-    height: 30vh;
+    height: 100vh;
 }
+.contents_title {
+    position: absolute;
+    top: 68vh;
+    right: -3vh;
+    text-align: right;
+    color: whitesmoke;
+    font-weight: normal;
+    opacity: 0.8;
+  }
+  .contents_title h1 {
+      font-size: 34px;
+  }
+  .contents_title h2 {
+    font-size: 12px;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  
 .contents_title {
     text-align: right;
     margin-right: 30px;
     margin-bottom: 50px;
 }
-
+.committee_contents_title h1{
+    text-align: center;
+    font-size: 24px;
+    border-bottom: solid;
+    border-color: purple;
+}
 .committee_container {
     margin: 0 auto;
     padding: 5px;
@@ -185,6 +213,7 @@ height: 40vh; ;
     background-color: rgb(255, 255, 255, 0.9);
     column-count: 1;
     column-gap: 13;
+    text-align: center;
   }
 
 .committee_contents img {
@@ -209,7 +238,7 @@ height: 40vh; ;
    -1px  0px 2px #999999,
     0px -1px 2px #999999;
     position: absolute;
-    top: 37.5%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -223,6 +252,7 @@ height: 40vh; ;
     width: 100%;
     column-count: 1;
     column-gap: 13;
+    text-align: center;
   }
 
 .circle_contents h2 {
@@ -238,7 +268,7 @@ height: 40vh; ;
    -1px  0px 2px #999999,
     0px -1px 2px #999999;
     position: absolute;
-    top: 37.5%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);

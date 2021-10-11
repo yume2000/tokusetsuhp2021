@@ -23,7 +23,7 @@ body {
     background-size:cover;
 }
 /*背景固定に不具合があったため修正　リンク：https://y-com.info/contents/?p=5941 */
-
+/*タイトルの表示　画像を中央に配置する時に参考：https://www.granfairs.com/blog/staff/centering-by-css*/
 .title{
     position: relative;
     height:100vh;
@@ -425,10 +425,13 @@ header {
 
 /*SNSアイコンの大きさ調整*/
 .SNS img{
-    width: 80px;
+    width: 45px;
     height: auto;
 }
 
+.copy-right {
+    font-size: 12px;
+}
 /*ハンバーガーメニューの作成*/
 /* <参考>https://www.asobou.co.jp/blog/web/css-menu   */
 
