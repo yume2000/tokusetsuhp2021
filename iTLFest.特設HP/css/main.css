@@ -24,12 +24,12 @@ body {
 }
 /*背景固定に不具合があったため修正　リンク：https://y-com.info/contents/?p=5941 */
 /*タイトルの表示　画像を中央に配置する時に参考：https://www.granfairs.com/blog/staff/centering-by-css*/
-.title{
+.title-wrapper{
     position: relative;
     height:100vh;
     width: 100%;
 }
-.title img{
+.title-wrapper img{
     z-index:0;
     opacity: 0.8;
     position: absolute;
