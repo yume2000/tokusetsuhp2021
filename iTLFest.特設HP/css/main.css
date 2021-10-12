@@ -384,7 +384,7 @@ footer {
 /*スマートフォン向けCSS*/
 @media(max-width:767px){
 /*タイトルの画像サイズ調整*/
-.title img{
+.title-wrapper img{
     width: 70%;
 }
 /*ヘッダの表示*/
