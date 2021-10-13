@@ -2,10 +2,10 @@ $(document).ready(function(){
   $('.full-screen').slick({
     arrows: false, // 矢印を非表示
     dots: true, // ドットナビゲーションを表示
-    autoplay: true, // 自動さ性を有効
+    autoplay: true, // 自動性を有効
     centerMode: true, // センターモードを有効
-    centerPadding: '20%', // センター画像の左右の余白を指定
-    slidesToShow: 2, //表示するスライドの枚数
+    centerPadding: '5%', // センター画像の左右の余白を指定
+    slidesToShow: 3, //表示するスライドの枚数
     responsive: [ //レスポンシブ対応を画面サイズでパターン分けしてる
       {
         breakpoint: 768,
