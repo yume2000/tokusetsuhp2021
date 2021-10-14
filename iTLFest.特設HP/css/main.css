@@ -132,10 +132,6 @@ header {
 /*reply: 上に.titleとして追加しました*/
 
 /*スライドショーの設定*/
-.sliderArea{
-    width: 100%;
-    margin: 0 auto;
-}
 .slide_img {
     margin-right:20px;
     margin-left:20px;
