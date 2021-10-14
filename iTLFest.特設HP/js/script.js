@@ -25,7 +25,7 @@ $(document).ready(function(){
 });
 
 //スライドショー以下コピペ　よく使うslickのオプション設定をコピペ　https://ryob.net/slick-responsive/
-//CSSの.sliderの値も上記に沿って一部編集
+//CSSの.sliderの値を左右に余白が出るよう一部編集　https://teratail.com/questions/197927
 //slidesToShowは以下の4番目を参照　https://qiita.com/ymeeto/items/7fc56eea4bd44487cdb7
 
 //変更前：スライドショー以下コピペ　https://125naroom.com/web/3198　10番目
