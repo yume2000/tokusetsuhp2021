@@ -215,11 +215,5 @@ body {
   .column-contents{
     margin: 15px 30px;
   }
-  .column-contents li{
-    font-size: 3vh;
-  }
-  .column-contents p{
-    font-size: 3vh;
-  }
 
   }
