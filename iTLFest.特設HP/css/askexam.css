@@ -135,18 +135,22 @@ body {
 }
 
 .column-contents-b{
-  margin: 20px 75px;
+  margin: 20px 75px 20px 75px;
   text-align: left;
+  padding: 0 20px;
+}
+.line-bottun{
+  padding-top: 30px;
+  text-align: center;
 }
 .column-contents{
   margin: 30px 75px;
   text-align: left;
+  padding: 0 20px;
 }
-.column-contents li{
-  font-size: 4.5vh;
-}
-.column-contents p{
-  font-size: 4vh;
+
+.zoom-link{
+  text-align: center;
 }
 
 /*レスポンシブ*/
