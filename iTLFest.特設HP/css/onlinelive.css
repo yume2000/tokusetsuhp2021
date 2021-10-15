@@ -202,6 +202,7 @@ header {
     margin-bottom: 0px;/*コンテンツ間の余白を無くす*/
     padding-bottom: 30px;
     width: 100%;
+    height: auto;
 }
 .onlive_script {
     overflow: auto;/*回り込みを続ける*/
@@ -251,20 +252,23 @@ header {
     background-color: rgba(122, 131, 160, 0.438);
 }
 /*03*/
-#onlive_contents03{
+/*#onlive_contents03{
     background-color:rgba(255, 255, 255, 0.9);
 }
 #onlive_contents03 {
     color: black;
-    padding-left: 55%;
-}
+    padding-left: 0;
+    padding-right: 0;
+}*/
 /*04*/
 #onlive_contents04 {
-    background-color: rgba(122, 131, 160, 0.438);
+    background-color:rgba(255, 255, 255, 0.9);
+    /*background-color: rgba(122, 131, 160, 0.438);*/
     margin-bottom: 20vh;
 }
 #onlive_contents04 {
-    color: white;
+    /*color: white;*/
+    color: black;
 }
 /*ボタンの見た目調整(すごい長いです) 引用サイト:*/
 .btn,
@@ -601,7 +605,7 @@ header {
 }
 .onlive_all_contents img{
     width: 360px;
-    margin-left: 60px;/*画像位置ここで調整*/
+    /*画像位置ここで調整*/
 }
 .onlive_script {
     clear: left;
