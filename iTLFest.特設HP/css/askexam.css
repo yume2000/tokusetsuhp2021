@@ -45,23 +45,112 @@ body {
   color:#434343;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px 0;
-}
-.column-white h3{
   text-align: center;
 }
+/* タイトルの左右に線を追加する方法(https://design-levelup.com/webdesign/html_css_making_2/) */
+.column-white h3 {
+  font-size: 5vh;
+  position: relative;
+  display: inline-block;
+  padding: 0 440px;
+}
+
+.column-white h3:before,
+.column-white h3:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 420px;
+  height: 1px;
+  background-color: #434343;
+}
+
+.column-white h3:before {
+  left: 0;
+}
+
+.column-white h3:after {
+  right: 0;
+}
+
+.column-contents-w{
+  margin: 30px 75px;
+  border: solid 0.5px #434343;
+}
+
+.column-contents-header{
+  font-size: 5vh;
+  margin: 25px 300px;
+  text-align: center;
+  border-bottom: solid 2px #434343;
+}
+.column-contents-w ul{
+  text-align: left;
+  margin: 0 9%;
+}
+.column-contents-w li{
+  padding: 20px 0 0px 0;
+  font-weight: bold;
+}
+.column-contents-w img{
+  margin-top: 30px;
+  height: auto;
+  width: 80%;
+}
+
+
 .column-black{
   width: 100%;
   height: auto;
   color: #fff;
   background-color: rgba(104, 104, 123, 0.8);
   padding: 20px 0;
+  text-align: center;
 }
-.column-black h3{
+.column-black h3 {
+  font-size: 5vh;
+  position: relative;
+  display: inline-block;
+  padding: 0 440px;
+}
+
+.column-black h3:before,
+.column-black h3:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 420px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.column-black h3:before {
+  left: 0;
+}
+
+.column-black h3:after {
+  right: 0;
+}
+
+.column-contents-b{
+  margin: 20px 75px 20px 75px;
+  text-align: left;
+  padding: 0 20px;
+}
+.line-bottun{
+  padding-top: 30px;
   text-align: center;
 }
 .column-contents{
-  margin: 30px 30px;
-  border-top: solid 2px #434343;
+  margin: 30px 75px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.zoom-link{
+  text-align: center;
 }
 
 /*レスポンシブ*/
@@ -91,5 +180,46 @@ body {
     margin-top: 0;
     padding-bottom: 20px;
   }
+
+  .column-white h3 {
+    font-size: 3vh;
+    padding: 0 180px;
+  }
   
+  .column-white h3:before,
+  .column-white h3:after {
+    width: 160px;
+  }
+
+  .column-black h3 {
+    font-size: 3vh;
+    padding: 0 180px;
+  }
+  .column-contents-header{
+    font-size: 18px;
+    margin: 25px 100px;
+    text-align: center;
+    border-bottom: solid 2px #434343;
+  }
+  .column-black h3:before,
+  .column-black h3:after {
+    width: 160px;
+  }
+  .column-contents-b{
+    margin: 30px 30px;
+  }
+  .column-contents-w{
+    margin: 15px 30px;
+    border: solid 0.5px #434343;
+  }
+  .column-contents{
+    margin: 15px 30px;
+  }
+  .column-contents li{
+    font-size: 3vh;
+  }
+  .column-contents p{
+    font-size: 3vh;
+  }
+
   }
