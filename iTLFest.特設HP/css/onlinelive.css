@@ -52,7 +52,7 @@ header {
 .menu {
     list-style: none;
     text-align: center;
-    margin: 0;
+    margin-top: 15px;
     padding: 0;
 }
 .menu ul {
@@ -592,20 +592,44 @@ header {
     padding-bottom: 20px;
 }
 /**/
+#onlive_contents01 h2, p{
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+#onlive_contents02 h2, p{
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
 #onlive_contents03 {
     color: black;
     padding-left: 0;
 }
-#onlive_contents04 p{
+#onlive_contents03 h2, p{
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+#onlive_contents04 h2, p{
+    position: relative;
+    left: 10%;
+    width: 80%;
     padding-bottom: 10px;
+}
+.btn{
+    position: relative;
+    left: 10%;
 }
 
 .onlive_all_contents {
     text-align: left;
-    padding-left:10px;
+    padding-left:0px;
 }
 .onlive_all_contents img{
-    width: 330px;
+    position: relative;
+    left: 8%;
+    width: 80%;
     /*画像位置ここで調整*/
 }
 .onlive_script {

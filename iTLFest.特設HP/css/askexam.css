@@ -183,17 +183,17 @@ body {
 
   .column-white h3 {
     font-size: 3vh;
-    padding: 0 180px;
+    padding: 0 120px;
   }
   
   .column-white h3:before,
   .column-white h3:after {
-    width: 160px;
+    width: 100px;
   }
 
   .column-black h3 {
     font-size: 3vh;
-    padding: 0 180px;
+    padding: 0 120px;
   }
   .column-contents-header{
     font-size: 18px;
@@ -203,7 +203,7 @@ body {
   }
   .column-black h3:before,
   .column-black h3:after {
-    width: 160px;
+    width: 100px;
   }
   .column-contents-b{
     margin: 30px 30px;
@@ -213,7 +213,7 @@ body {
     border: solid 0.5px #434343;
   }
   .column-contents{
-    margin: 15px 30px;
+    margin: 15px 30px 15px 0px;
   }
 
   }

@@ -6,6 +6,7 @@
 
 /*index.htmlのヘッダー*/
 body {
+    font-family: serif ,"ヒラギノ明朝", "ヒラギノ角ゴシック";
     /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
     margin: 0 auto;
     padding: 0;
@@ -69,15 +70,13 @@ header {
 }
 .menu {
     list-style: none;
-    text-align: center;
-    margin: 0;
+    margin-top: 15px;
     padding: 0;
 }
 .menu ul {
     float: center;
 }
 .menu li{
-    float: left;
     font-size: 20px;
     display: inline-block;
     padding: 5px 20px;
@@ -180,7 +179,8 @@ header {
     background-color: rgba(248, 246, 246, 0.9);
     text-align: center;
     margin-bottom: 30px;
-    width: 100%;
+    width: 90%;
+    padding: 0 5%;
 }
 
 .all_contents > h1 {
