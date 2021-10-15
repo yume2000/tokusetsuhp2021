@@ -601,10 +601,11 @@ header {
 }
 
 .onlive_all_contents {
-    text-align: center;
+    text-align: left;
+    padding-left:10px;
 }
 .onlive_all_contents img{
-    width: 360px;
+    width: 330px;
     /*画像位置ここで調整*/
 }
 .onlive_script {
