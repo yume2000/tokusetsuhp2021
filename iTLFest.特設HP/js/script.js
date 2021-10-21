@@ -29,3 +29,36 @@ $(document).ready(function(){
 //slidesToShowは以下の4番目を参照　https://qiita.com/ymeeto/items/7fc56eea4bd44487cdb7
 
 //変更前：スライドショー以下コピペ　https://125naroom.com/web/3198　10番目
+
+
+//以下没になったが一応。スクロールするとトップに戻るボタンが表示される。
+//＜参考1番より＞https://www.webopixel.net/javascript/538.html
+/*$(function() {
+  var topBtn = $('#info');    
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          topBtn.fadeIn();
+      } else {
+          topBtn.fadeOut();
+      }
+  });
+  //スクロールしてトップ
+  /*topBtn.click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 500);
+      return false;
+  });
+});
+*/
+
+//押すと消えるボタン
+//参考：https://qiita.com/sunnyG/items/faf1821ae09820e30ce8
+$(function () {
+  $('button').on('click', () => {
+      $('#info').hide();
+  });
+});
+

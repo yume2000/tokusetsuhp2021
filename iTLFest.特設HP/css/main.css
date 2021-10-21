@@ -216,6 +216,31 @@ footer {
     bottom: 0;
 }
 
+/*スクロールすると出てくるバナーみたいなやつ*/
+/*<参考の1番より>https://www.webopixel.net/javascript/538.html*/
+#info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /*font-size: 85%;*/
+}
+#info a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 15px 10px 20px 10px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#info a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
+/**/
+
 /*contact.html*/
 
 .contact_wrapper {
