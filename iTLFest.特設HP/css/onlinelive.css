@@ -1,163 +1,4 @@
 @charset "UTF-8";
-/*上部の隙間防止*/
-* {
-    margin: 0 0 0 0;
-  }
-
-/*index.htmlのヘッダー*/
-body {
-    font-family: serif ,"ヒラギノ明朝", "ヒラギノ角ゴシック";
-    /*ヘッダスクロール時、上部の隙間防止(0で隙間を無くす)*/
-    margin: 0 auto;
-    padding: 0;
-}
-.wrapper:before{
-    content:"";
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:-1;
-    width:100%;
-    height:100vh;
-    background:url(../images/neon-background.png) center no-repeat;
-    background-size:cover;
-}
-/*背景固定に不具合があったため修正　リンク：https://y-com.info/contents/?p=5941 */
-
-h1 {
-    font-size: xx-large;
-}
-
-/*上のメニュー固定用*/
-header {
-    width: 100%;
-    padding: 1.5vh 0;
-    background-color: rgba(95, 88, 88, 0.438);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    vertical-align: bottom;
-}       
-
-
-.logo img{
-    width: 11vh;
-    height: auto;
-    float: left;
-    margin-right: 40vh;
-    margin-left: 10vh;
-}
-.menu {
-    list-style: none;
-    text-align: center;
-    margin-top: 15px;
-    padding: 0;
-}
-.menu ul {
-    float: center;
-}
-.menu li{
-    float: left;
-    font-size: 20px;
-    display: inline-block;
-    padding: 5px 20px;
-    margin-left: 0;
-}
-
-
-/*ハンバーガーメニューが右隣に表示されないようにする。*/
-.hamburger-menu {
-    display: none;
-}
-/*ハンバーガーメニューが右隣に表示されないようにする。*/
-.hamburger-menu .menu-content ul {
-    list-style-type: none;
-    font-size: xx-small;
-}
-
-.hamburger-menu .menu-content a{
-    color: transparent; /*PCサイズのときのみ、箇条書きを非表示に*/
-}
-
-#menu-btn-check{
-    width: 0px;
-}
-
-
-/*2021_0813リンクの文字色は後で詰める。大まかな形だけ*/
-.header_navbar a:link {
-    color: whitesmoke;
-    text-decoration: none;
-}
-.header_navbar a:visited {
-    color: whitesmoke;
-    text-decoration: none;
-}
-.header_navbar a:hover {
-    color: #7b8dac;
-    text-decoration: none;
-}
-.header_navbar a:active {
-    color: #5a9bc0;
-    text-decoration: none;
-}
-
-
-
-
-/*all_contents*/ 
-/*各contentsの共通部分*/
-/*半透明の白いところ*/
-
-.time_schedule {
-    background-color: rgba(136, 125, 125, 0.37);
-    text-align: center;
-    color: rgb(247, 243, 243);
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    text-shadow:  2px  2px 10px #777 ,
-    -2px  2px 10px #777 ,
-     2px -2px 10px #777 ,
-    -2px -2px 10px #777;
-    /*<参考：文字を浮かび上がらせる>https://webparts.cman.jp/string/outline/*/
-}
-.time_schedule > ul > li{
-    display: block;
-    list-style-type: none;
-    border: solid;
-    border-color:honeydew;
-    border-width: 1px;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-right: 300px;
-    margin-left: 250px
-}
-.time_schedule > ul > li > .time{
-    color: rgb(247, 243, 243);
-    font-weight: bold;
-}
-
-
-
-/*SNSアイコンの大きさ調整*/
-.SNS img{
-    width: 11vh;
-    margin: 0 10px;
-    height: auto;
-    vertical-align: bottom;
-}
-.copy-right {
-    color: whitesmoke;
-    text-align: center;
-    bottom: 0;
-}
-
-
-
-
-
 /*各htmlごとのcss*/
 /*onlinelive_top.html*/
 .onlinelive_wrapper:before{
@@ -512,6 +353,12 @@ header {
     border-bottom: solid 1px #ffffff;
     list-style: none;
 }
+/*2021_1021 SNSアイコン追加*/
+.menu-content ul li img {
+    height: 35px;
+    width: 35px;
+}
+
 .menu-content ul li a {
     display: block;
     width: 100%;

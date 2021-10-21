@@ -65,7 +65,7 @@ header {
     width: 11vh;
     height: auto;
     float: left;
-    margin-right: 40vh;
+    margin-right: 35vh;
     margin-left: 10vh;
 }
 .menu {
@@ -82,7 +82,15 @@ header {
     padding: 5px 20px;
     margin-left: 0;
 }
-
+/*メニューにあるSNSアイコンの設定*/
+.menu .SNS {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}    
+.menu .SNS img{
+    width: 47px;
+}  
 
 /*ハンバーガーメニューが右隣に表示されないようにする。*/
 .hamburger-menu {
@@ -440,6 +448,13 @@ header {
     border-bottom: solid 1px #ffffff;
     list-style: none;
 }
+
+/*2021_1021 SNSアイコン追加*/
+.menu-content ul li img {
+    height: 35px;
+    width: 35px;
+}
+
 .menu-content ul li a {
     display: block;
     width: 100%;
