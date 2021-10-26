@@ -98,6 +98,10 @@ body {
     border-color: gray;
 }
 
+#committee_contents07 p{
+    font-size: 17px;
+}
+
 .contents_detail {
     overflow: auto;
     width: 100%;
