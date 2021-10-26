@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/*campus_tour.css*/
+.campus_wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/campus/campus_lobby01.jpg) center no-repeat;
+    /*background-color: dimgrey;*/
+    background-size:cover;
+}
+.title-wrapper {
+    height: 70vh;
+}
+
+.main{
+    font-family: "游ゴシック体";
+}
+
+/*choice_tour部分*/
+.choice_tour_wrapper {
+    text-align: center;
+    font-family: "游ゴシック体";
+    color: rgb(56, 56, 56);
+    background-color: rgba(244, 253, 246, 0.925);
+    margin-right: 150px; 
+    margin-bottom: 60px;
+    margin-left: 150px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.choice_tour_wrapper > h1{
+    padding-bottom: 10px;
+}
+/*横並び*/
+.choice_tour {
+    display: flex;
+}
+/*choice_tour個別指定部分*/
+#choice1{
+    margin-right: 20px;
+}
+
+/* <!-- 参考:画像をフェードして表示   https://hajimete.org/css-hover-image-change  -->*/
+.btn {
+	position: relative;
+	width: 470px;
+	height: 170px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.btn img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.btn:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+/**/
+
+/*contents部分*/
+.campus_contents {
+    background-color: rgba(244, 253, 246, 0.925);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 150px; 
+    margin-left: 150px;
+    padding: 0 5%;
+    padding-bottom: 50px;
+}
+
+.campus_contents  h1 {
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(53, 49, 49);
+}
+.campus_contents  h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(53, 49, 49);
+}
+
+.youtube{
+    background-color: rgba(244, 253, 246, 0.925);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    color: rgb(53, 49, 49);
+}
+
+.campus_contents > p {
+    font-size: large;
+}
+.campus_contents img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.campus_contents iframe{
+    width: 100%;
+}
+
+#Minecraft{
+    background:url(../images/campus/minecraft-background.jpg) 
+}
+.Minecraft_script{
+    background-color: rgba(244, 253, 246, 0.925);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+#version {
+    text-align: right;
+}
+.adress {
+    margin-bottom: 20px;
+}
+
+#message1{
+    width: 100%;
+    margin-top: 20px;
+    border: thick double #677880;
+}
+#message2{
+    width: 100%;
+    margin-top: 10px;
+    border: thick double #b6a86a;
+}
+
+
+.campus_footer footer{
+    margin-top: 20vh;
+}
+
+
+/*スマートフォン向けCSS*/
+@media(max-width:767px){
+
+    .choice_tour_wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /*choiceの部分*/
+    .choice_tour {
+        display: block;
+    }
+    .choice_tour_wrapper > h1 {
+        font-size: 25px;
+    }
+    /*切り替わるボタン部分*/
+    .btn {
+        position: relative;
+        width: 370px;
+        height: 100px;
+        margin-left: 50px ;
+    }
+    .campus_contents {
+        background-color: rgba(244, 253, 246, 0.925);
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .youtube {
+        margin-bottom: 0;
+    }
+    #choice1{
+        margin-bottom: 10px;
+    }
+
+    /*キャンパスツアー*/
+    .campus_contents img {
+        width: 100%;
+        margin-left: 3px;
+    }
+    .campus_contents iframe{
+        width: 100%;
+    }
+    .campus_contents h1{
+        font-size: 35px;
+    }
+    .campus_contents h2{
+        font-size: 20px;
+    }
+    .campus_contents h3{
+        font-size: 15px;
+    }
+}
+
+
