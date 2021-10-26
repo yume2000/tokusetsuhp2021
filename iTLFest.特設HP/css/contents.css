@@ -91,7 +91,7 @@ body {
     word-break: keep-all;
 }
 
-.committee_contents > img {
+.committee_contents img {
     width: 400px;
     height: 300px;
     border-bottom: solid;
