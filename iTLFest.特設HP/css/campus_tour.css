@@ -130,13 +130,16 @@
 }
 
 #message1{
-    width: 100%;
+    width: 90%;
     margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 0;
     border: thick double #677880;
 }
 #message2{
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
+    margin-left: 35px;
     border: thick double #b6a86a;
 }
 
@@ -166,7 +169,7 @@
         position: relative;
         width: 370px;
         height: 100px;
-        margin-left: 50px ;
+        margin-left: 0px ;
     }
     .campus_contents {
         background-color: rgba(244, 253, 246, 0.925);
@@ -182,10 +185,30 @@
         margin-bottom: 10px;
     }
 
+    /*choice部分見た目調整*/
+    .campus_contents {
+        background-color: rgba(244, 253, 246, 0.925);
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: 0px; 
+        margin-left: 0px;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+
+    /*メッセージ欄見た目調整*/
+    #message1{
+        margin-left: 13px;
+    }
+    #message2{
+        margin-left: 13px;
+    }
+
     /*キャンパスツアー*/
     .campus_contents img {
         width: 100%;
-        margin-left: 3px;
     }
     .campus_contents iframe{
         width: 100%;
