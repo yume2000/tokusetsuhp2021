@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*campus_tour.css*/
+.campus_wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/campus/campus_lobby01.jpg) center no-repeat;
+    /*background-color: dimgrey;*/
+    background-size:cover;
+}
+.title-wrapper {
+    height: 70vh;
+}
+
+.main{
+    font-family: "游ゴシック体";
+}
+
+/*choice_tour部分*/
+.contents_details {
+    text-align: center;
+    font-family: "游ゴシック体";
+    color: rgb(56, 56, 56);
+    background-color: rgba(244, 253, 246, 0.925);
+    margin-right: 150px; 
+    margin-bottom: 60px;
+    margin-left: 150px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.contents_details > h1{
+    padding-bottom: 10px;
+}
+.contents_details img {
+    width: 100%;
+}
+.contents_explains {
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    border: solid 2px #434343;
+    margin-top: 20px;
+}
+.contents_explains h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contents_explains p {
+    text-align: left;
+    margin-bottom: 20px;
+    margin: 0 5%;
+}
+.contents_explains ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+/*以下オンライン報告会のリンク用ボタン:button09*/
+.button09 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.button09 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 170px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ccc;
+    transition: 0.3s;
+  }
+  
+  .button09 a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #3d9ec8;
+    transition: 0.2s;
+  }
+  
+  .button09 a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+  }
+  
+  .button09 a:hover::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .button09 a:hover {
+    text-decoration: none;
+    background-color: #a0c4d3;
+  }
+/*スマートフォン向けCSS*/
+@media(max-width:767px){
+
+    .contents_details {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contents_details > h1 {
+        font-size: 25px;
+    }
+    .contents_explains p {
+        font-size: 15px;
+    }
+    /*contents_explainsの部分*/
+
+    .contents_explains h2 {
+        font-size: 18px;
+    }
+    .contents_explains p {
+        font-size: 15px;
+    }
+}
+
+
