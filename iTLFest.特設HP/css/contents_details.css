@@ -87,6 +87,7 @@
     width: 90%;
     border: solid 2px #434343;
     margin-top: 20px;
+    padding: 0 2.5%;
 }
 .contents_explains h2 {
     margin-top: 20px;
@@ -95,7 +96,7 @@
 .contents_explains p {
     text-align: center;
     margin-bottom: 20px;
-    margin: 0 5%;
+    margin: 0;
 }
 .contents_explains ul {
     list-style-type: none;
@@ -106,10 +107,6 @@
 }
 
 /*iTL国際交流サークルのcss*/
-.ai_ul {
-  width: 90%;
-  margin-left: 0;
-}
 /*eSportsのcss*/
 /*ボタンの見た目調整(すごい長いです) 引用サイト:*/
 .btn {
