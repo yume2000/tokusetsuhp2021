@@ -106,7 +106,9 @@
 }
 
 /*iTL国際交流サークルのcss*/
-.meetinginfo {
+.ai_ul {
+  width: 90%;
+  margin-left: 0;
 }
 /*eSportsのcss*/
 /*ボタンの見た目調整(すごい長いです) 引用サイト:*/
@@ -261,6 +263,10 @@ a.btn-gradient:hover:after {
     }
     .contents_explains p {
         font-size: 15px;
+    }
+    .ai_ul iframe {
+      position: relative;
+      right: 10px;
     }
 }
 
