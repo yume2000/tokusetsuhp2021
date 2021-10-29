@@ -56,7 +56,7 @@
 /*応急処置のようだが、その際は、pタグを何個か連続させてdivの高さを延ばす。*/
 /*そして、pタグのcolorをtransparentにして透明にする*/
 
-.onlive_all_contents > img {
+.onlive_all_contents img {
     width: 50%;  
     height: auto;
     float: left;
