@@ -62,6 +62,7 @@ body {
 }
 
 .committee_contents {
+    max-width: 100%;
     margin-bottom: 0px;
     padding: 1.25% 0;
     -webkit-column-break-inside: avoid;
@@ -137,6 +138,7 @@ body {
 }
 
 .circle_contents {
+    max-width: 100%;
     margin-bottom: 0px;
     padding: 1.25% 0;
     -webkit-column-break-inside: avoid;
