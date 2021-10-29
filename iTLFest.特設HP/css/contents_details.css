@@ -39,6 +39,19 @@
     /*background-color: dimgrey;*/
     background-size:cover;
 }
+.musiclive_wrapper:before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url(../images/contents/musiclive-header-background.png) center no-repeat;
+    /*background-color: dimgrey;*/
+    background-size:cover;
+}
 .title-wrapper {
     height: 70vh;
 }
@@ -87,6 +100,9 @@
 .contents_explains ul {
     list-style-type: none;
     text-align: left;
+}
+.contents_explains img {
+    width: 90%;
 }
 
 /*iTL国際交流サークルのcss*/
