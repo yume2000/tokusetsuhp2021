@@ -49,7 +49,7 @@ body {
 
 .committee_container {
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 0;
     width: 100%;
     background-color:rgba(255, 255, 255, 0.9);
     column-count: 3;
@@ -63,7 +63,7 @@ body {
 
 .committee_contents {
     margin-bottom: 0px;
-    padding: 1.25%;
+    padding: 1.25% 0;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -125,7 +125,7 @@ body {
 
 .circle_container {
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 0;
     width: 100%;
     column-count: 3;
     column-gap: 13;
@@ -138,7 +138,7 @@ body {
 
 .circle_contents {
     margin-bottom: 0px;
-    padding: 1.25%;
+    padding: 1.25% 0;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -214,7 +214,7 @@ body {
 }
 .committee_container {
     margin: 0 auto;
-    padding: 5px;
+    padding:  0;
     width: 100%;
     background-color: rgb(255, 255, 255, 0.9);
     column-count: 1;
@@ -257,7 +257,7 @@ body {
     
 .circle_container {
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 0;
     width: 100%;
     column-count: 1;
     column-gap: 13;
