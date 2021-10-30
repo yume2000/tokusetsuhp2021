@@ -1,3 +1,4 @@
+
 body {
     font-family: serif ,"ヒラギノ明朝", "ヒラギノ角ゴシック";
     }
@@ -287,7 +288,7 @@ body {
     word-break: keep-all;
 }
 
-.circle_contents > img {
+.circle_contents  img {
     width: 360px;
     height: 270px;
     border-bottom: solid;
